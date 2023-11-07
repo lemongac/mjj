@@ -3,10 +3,7 @@ FROM node:slim
 
 WORKDIR /app
 ENV TZ="Asia/Shanghai" \
-  NODE_ENV="production" \
-  NEZHA_SERVER=data.king360.eo.org \
-  NEZHA_KEY=5QjwIeSBYIIbTgdKut \
-  NEZHA_PORT=443
+  NODE_ENV="production" 
   
 
 COPY package.json index.js start.sh /app/
